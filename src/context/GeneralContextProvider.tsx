@@ -86,7 +86,7 @@ export function ShoppingContextProvider({children}:ShoppingChildrenContext) {
 				}, 500)
 			})
         } 
-
+ 
         getProducts();
     }, [categoryID]);
 
@@ -125,7 +125,7 @@ export function ShoppingContextProvider({children}:ShoppingChildrenContext) {
             })
         } 
 
-        getCategories();
+        getCategories()
     }, []);
 
 
