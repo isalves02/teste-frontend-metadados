@@ -26,26 +26,26 @@ Os três maiores focos foram: performance, código limpo e fácil manutenibilida
   - "src/contexts": funções e as requisições que serão acessadas por todos os componentes da aplicação.
 
 ## Dependências utilizadas
-  "vite": "^5.1.6"
-  "sass": "^1.71.1"
-  "axios": "^1.6.7",
-  "jest": "^29.7.0",
-  "react": "^18.2.0",
-  "eslint": "^8.57.0",
-  "typescript": "^5.2.2",
-  "react-dom": "^18.2.0",
-  "@types/react": "^18.2.64",
-  "react-router-dom": "^6.22.3",
-  "@types/react-dom": "^18.2.21",
-  "@vitejs/plugin-react": "^4.2.1",
-  "@typescript-eslint/parser": "^7.1.1",
-  "eslint-plugin-react-hooks": "^4.6.0",
-  "eslint-plugin-react-refresh": "^0.4.5",
-  "@fortawesome/react-fontawesome": "^0.2.0",
-  "@typescript-eslint/eslint-plugin": "^7.1.1",
-  "@fortawesome/free-solid-svg-icons": "^6.5.1",
-  "@fortawesome/fontawesome-svg-core": "^6.5.1",
-  "@fortawesome/free-regular-svg-icons": "^6.5.1",
+  - "vite": "^5.1.6"
+  - "sass": "^1.71.1"
+  - "axios": "^1.6.7",
+  - "jest": "^29.7.0",
+  - "react": "^18.2.0",
+  - "eslint": "^8.57.0",
+  - "typescript": "^5.2.2",
+  - "react-dom": "^18.2.0",
+  - "@types/react": "^18.2.64",
+  - "react-router-dom": "^6.22.3",
+  - "@types/react-dom": "^18.2.21",
+  - "@vitejs/plugin-react": "^4.2.1",
+  - "@typescript-eslint/parser": "^7.1.1",
+  - "eslint-plugin-react-hooks": "^4.6.0",
+  - "eslint-plugin-react-refresh": "^0.4.5",
+  - "@fortawesome/react-fontawesome": "^0.2.0",
+  - "@typescript-eslint/eslint-plugin": "^7.1.1",
+  - "@fortawesome/free-solid-svg-icons": "^6.5.1",
+  - "@fortawesome/fontawesome-svg-core": "^6.5.1",
+  - "@fortawesome/free-regular-svg-icons": "^6.5.1",
 
 
 
