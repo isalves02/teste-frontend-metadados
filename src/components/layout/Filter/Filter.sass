@@ -1,0 +1,82 @@
+@import '../../../assets/sass/functions'
+
+.filter
+    color: var(--white)
+
+    .open-filter 
+        gap: toRem(4)
+        width: toRem(92)
+        height: toRem(32)
+        color: var(--white)
+        margin-bottom: toRem(32)
+        background: var(--gray-900)
+
+    .box
+        right: 0
+        z-index: 50
+        top: toRem(32)
+        background: var(--gray-900)
+        padding: toRem(16) toRem(10)
+        border-radius: toRem(4) 0 toRem(4) toRem(4)
+        
+        width: 0
+        height: 0
+        opacity: 0
+        transition: width .3s ease, height .3s ease, opacity .3s ease
+
+        &.active 
+            opacity: 1
+            height: auto
+            width: toRem(200)
+
+
+        .item
+            cursor: pointer
+            font-weight: 500
+            font-size: toRem(14)
+            padding-bottom: toRem(12)
+
+            &:not(:last-child)
+                margin-bottom: toRem(16)
+                border-bottom: 1px solid var(--gray-700)
+
+            ul 
+                padding-top: toRem(8)
+
+                li 
+                    &.show-all
+                        margin-top: toRem(10)
+
+                        button
+                            font-weight: 600
+                            text-transform: uppercase
+
+                    button
+                        width: 100%
+                        text-align: left
+                        color: var(--white)
+                        padding: toRem(4) 0
+                        transition: color .3s ease
+                            
+                        &:hover
+                            color: var(--primary)
+                
+
+            .prices
+                .price
+                    flex: 1
+
+                    label
+                        font-size: toRem(12)
+                        &:not(:last-child)
+                            margin-top: toRem(10)
+
+                    input
+                        color: var(--white)
+        
+        .apply-filters
+            width: 100%
+            border-radius: toRem(4)
+            background: var(--gray-550)
+            padding: toRem(6) toRem(16)
+    

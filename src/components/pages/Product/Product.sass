@@ -1,0 +1,50 @@
+@import '../../../assets/sass/functions'
+
+.product 
+    padding: toRem(60) 0 toRem(164)
+
+    .content 
+        gap: toRem(32)
+        flex-direction: column
+ 
+        @media (min-width: 768px)
+            gap: toRem(64)
+            flex-direction: row
+
+        img
+            width: 100%
+            height: auto
+
+            @media (min-width: 768px)
+                width: 35%
+                object-fit: cover
+
+        
+
+        .info
+            max-width: 100%
+
+            @media (min-width: 768px)
+                max-width: 52%
+
+            .price
+                padding: toRem(10) 0 toRem(24)
+
+            button
+                gap: toRem(8)
+                width: toRem(200)
+                height: toRem(64)
+                color: var(--white)
+                font-size: toRem(24)
+                margin-top: toRem(24)
+                background: var(--primary)
+                text-transform: capitalize
+                transition: background .3s ease
+
+                &:hover
+                    background: var(--gray-900)
+
+                @media (min-width: 768px)
+                    width: toRem(223)
+                    height: toRem(72)
+                    font-size: toRem(29)

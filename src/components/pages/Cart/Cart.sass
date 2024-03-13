@@ -1,0 +1,81 @@
+@import '../../../assets/sass/functions'
+
+.cart 
+    .title
+        padding-bottom: toRem(32)
+
+    .products
+        .item
+            margin-bottom: toRem(24)
+            font-family: var(--secondary-font)
+
+            .description
+                width: 50%
+
+                > div
+                    gap: toRem(16)
+
+                @media (min-width: 768px)
+                    width: 30%
+
+                img
+                    object-fit: cover
+                    border-radius: toRem(10)
+                    border: 1px solid var(--gray-400)
+
+                span
+                    font-weight: 700
+                    font-size: toRem(12)
+
+            .price
+                width: 50%
+                text-align: end
+                
+                @media (min-width: 768px)
+                    width: auto
+                    text-align: auto
+
+
+            .quantity
+                width: 30%
+                gap: toRem(10)
+                height: toRem(40)
+                font-size: toRem(14)
+                border-radius: toRem(4)
+                border: 1px solid var(--gray-550) 
+
+                @media (min-width: 768px)
+                    width: toRem(100)
+
+                button
+                    color: var(--gray-650)
+
+                    &:disabled
+                        color: var(--gray-550)
+
+            .discount 
+                width: 30%
+
+                @media (min-width: 768px)
+                    width: auto
+
+            .trash
+                color: var(--gray-700)
+
+            .quantity,
+            .discount,
+            .trash
+                margin-top: toRem(16)
+
+                @media (min-width: 768px)
+                    margin-top: 0
+
+
+
+
+    .total
+        font-size: toRem(14)
+        margin-top: toRem(40)
+
+        .label
+            font-weight: 700

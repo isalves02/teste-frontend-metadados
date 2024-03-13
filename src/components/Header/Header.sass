@@ -1,0 +1,84 @@
+@import '../../assets/sass/functions'
+
+header 
+    z-index: 100
+    height: auto
+    inset: 0 0 auto
+    padding: toRem(32) 0
+    background: var(--gray-500)
+    
+    @media (min-width: 1024px)
+        height: toRem(186)
+        padding: toRem(32) 0 toRem(42)
+
+
+    .head
+        @media (min-width: 1024px)
+            padding-bottom: toRem(26)
+            border-bottom: 1px solid var(--gray-600)
+
+        .logo
+            left: 50%
+            top: toRem(32)
+            width: toRem(150)
+            transform: translateX(-50%)
+
+            @media (min-width: 768px)
+                width: toRem(180)
+
+        .openCart
+            gap: toRem(8)
+            font-size: toRem(16)
+            transition: color .3s ease
+
+            span
+                display: none
+
+            @media (min-width: 1024px)       
+                font-size: toRem(18)
+
+                span
+                    display: block
+
+            &:hover 
+                color: var(--primary)
+
+    .menunav
+        display: none
+        padding-top: toRem(30)
+
+        @media (min-width: 1024px)
+            display: block
+
+    .box-search
+        button
+            z-index: 5
+            width: toRem(30)
+            height: toRem(30)
+            position: relative
+     
+        input
+            left: 0
+            width: 0
+            top: 50%
+            z-index: 3
+            opacity: 0
+            height: 125%
+            font-size: toRem(14)
+            padding-left: toRem(40)
+            border-radius: toRem(32)
+            padding-right: toRem(10)
+            background: var(--white)
+            box-shadow: 0 0 4px rgba(0,0,0, .2)
+            transition: width .3s ease, opacity .3s ease 
+            transform: translateY(-50%)
+
+            &.active
+                opacity: 1
+                width: calc(100vw - toRem(32))
+
+                @media (min-width: 768px)
+                    width: calc(100vw - toRem(64))
+
+                @media (min-width: 1024px)
+                    width: auto

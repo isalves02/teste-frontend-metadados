@@ -1,0 +1,17 @@
+@import '../../../assets/sass/functions'
+
+.cart-updated
+    opacity: 0
+    z-index: 100
+    gap: toRem(8)
+    right: toRem(32)
+    bottom: toRem(32)
+    border-radius: toRem(64)
+    background: var(--white)
+    box-shadow: 0 0 6px rgba(0,0,0,.5)
+    padding: toRem(12) toRem(12) toRem(12) toRem(24)
+    transition: width .3s ease, opacity .3s ease
+
+    &.active 
+        opacity: 1
+        

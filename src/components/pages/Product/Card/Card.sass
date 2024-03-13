@@ -1,0 +1,65 @@
+
+@import '../../../../assets/sass/functions'
+
+.card-product
+    width: 100%
+    height: toRem(478)
+
+    @media (min-width: 768px)
+        width: calc(50% - toRem(12))
+
+    @media (min-width: 1024px)
+        width: calc(33% - toRem(14))
+    
+    @media (min-width: 1440px)
+        width: calc(25% - toRem(18))
+
+
+    .sale 
+        top: toRem(22)
+        font-weight: 600
+        color: var(--white)
+        font-size: toRem(12)
+        text-transform: uppercase 
+        padding: toRem(4) toRem(12)
+        background: var(--gray-900)
+
+    .img-box
+        width: 100%
+        height: toRem(400)
+        
+        img
+            width: 100%
+            object-fit: cover
+
+    button
+        bottom: 0
+        width: 100%
+        gap: toRem(8)
+        height: toRem(55)
+        padding: toRem(10)
+        color: var(--white)
+        font-size: toRem(18)
+        transition: color .3s ease
+        background: var(--gray-900)
+
+        &:hover 
+            color: var(--primary)
+
+    
+    .info
+        padding: toRem(10) toRem(10)
+
+        .title
+            padding-bottom: toRem(16)
+
+        .category
+            opacity: .5
+
+        .title,
+        .category
+            text-transform: capitalize
+
+        .title,
+        .price
+            font-weight: 600
